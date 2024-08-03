@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Notes</h2>
+            <ul id="notes-list">
+                <!-- Notes will be injected here -->
+            </ul>
+            <button id="new-note-button">New Note</button>
+        </div>
+        <div class="main">
+            <input type="text" id="note-title" placeholder="Title">
+            <textarea id="note-content" placeholder="Write your note here..."></textarea>
+        </div>
+    </div>
+
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Are you sure you want to delete this note?</p>
+            <button id="confirm-delete">Yes</button>
+            <button id="cancel-delete">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
